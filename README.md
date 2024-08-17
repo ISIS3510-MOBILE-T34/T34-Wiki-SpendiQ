@@ -1,4 +1,4 @@
-# T34-Wiki
+# Team 34 - Our Wiki
 This repository is used to mainly store our Team Wiki information, which includes answers to weekly tasks and progress reports.
 
 Please access the Wiki section to review our Team Work and Deliverables!
