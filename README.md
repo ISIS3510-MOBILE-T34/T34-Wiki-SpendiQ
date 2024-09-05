@@ -3,7 +3,7 @@ This repository is used to mainly store our Team Wiki information, which include
 
 Please access the [Wiki section](https://github.com/ISIS3510-MOBILE-T34/T34-Wiki/wiki) to review our Team Work and Deliverables!
 
-![image](https://github.com/user-attachments/assets/254e34db-1691-4ede-ba0d-4e5e77469bc1)
+![image](https://github.com/user-attachments/assets/b561f2d6-7744-489a-a8b1-55f6436461ef)
 
 
 
