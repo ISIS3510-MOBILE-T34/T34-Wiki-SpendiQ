@@ -1,0 +1,85 @@
+| **Scenario #1: Conflicting Expense Entries** | |
+| --- | --- |
+| **Quality attributes involved in the scenario** | **Consistency, Usability, Performance** |
+| **App status and context** | The app is active on Sofía’s phone, and she is logging a manual expense while the SMS parsing system automatically logs a new transaction at the same time. |
+| **Changes in the context (includes what the persona is doing)** | Sofía manually enters an expense while the SMS parser simultaneously logs a purchase. |
+| **System reaction to the changes in the context** | The app must prevent a race condition by ensuring manual entry and automatic logging do not overwrite each other, using locks or a queue system to manage transaction entries. |
+
+| **Scenario #2: GPS and Manual Budget Update Conflict** | |
+| --- | --- |
+| **Quality attributes involved in the scenario** | **Responsiveness, Usability, Scalability** |
+| **App status and context** | Jeison is at a shopping mall, and the app sends him a location-based spending alert. At the same time, he manually adjusts his budget. |
+| **Changes in the context (includes what the persona is doing)** | Jeison adjusts his shopping budget while a location-based notification is triggered. |
+| **System reaction to the changes in the context** | The system must handle the real-time budget update and the GPS-based alert without freezing or losing data, ensuring both changes are processed without conflict. |
+
+| **Scenario #3: Syncing Cloud Data During Offline Manual Entry** | |
+| --- | --- |
+| **Quality attributes involved in the scenario** | **Connectivity, Availability, Resilience** |
+| **App status and context** | Tim is offline while manually entering cash expenses, but the app is syncing data from the cloud as soon as he regains network connectivity. |
+| **Changes in the context (includes what the persona is doing)** | Tim connects to Wi-Fi, and the app starts syncing previously unsynced expenses and retrieving updates from the cloud. |
+| **System reaction to the changes in the context** | The system must prioritize syncing without overwriting new manual entries, using conflict resolution mechanisms to merge local and cloud changes. |
+
+| **Scenario #4: Savings Goal Conflict During System Auto-Save** | |
+| --- | --- |
+| **Quality attributes involved in the scenario** | **Resilience, Scalability, Performance** |
+| **App status and context** | Sofía is adjusting her savings goal during an automatic background process where the app saves all user data periodically. |
+| **Changes in the context (includes what the persona is doing)** | Sofía manually updates her goal at the same time as the system auto-saves her progress. |
+| **System reaction to the changes in the context** | The app needs to lock the goal-setting process to ensure Sofía’s manual update is applied before the auto-save occurs to prevent data corruption. |
+
+| **Scenario #5: Biometric Authentication Interruption** | |
+| --- | --- |
+| **Quality attributes involved in the scenario** | **Security, Availability, Performance** |
+| **App status and context** | Jeison is logging into the app using biometric authentication, while a notification about his spending trends is triggered. |
+| **Changes in the context (includes what the persona is doing)** | While Jeison is authenticating, a system push notification about his spending trends pops up. |
+| **System reaction to the changes in the context** | The biometric process must be completed before the notification is processed to avoid data breaches or system interruptions. |
+
+| **Scenario #6: Simultaneous Notification and SMS Parsing** | |
+| --- | --- |
+| **Quality attributes involved in the scenario** | **Performance, Responsiveness, Scalability** |
+| **App status and context** | Tim receives a notification about a bill reminder while the SMS parsing system logs an expense at the same time. |
+| **Changes in the context (includes what the persona is doing)** | The app tries to process both the notification and the expense parsing simultaneously. |
+| **System reaction to the changes in the context** | The app must handle both operations without freezing or slowing down, by managing system threads effectively to avoid bottlenecks. |
+
+| **Scenario #7: Location Services Interfering with International Expense** | |
+| --- | --- |
+| **Quality attributes involved in the scenario** | **Internationalization, Connectivity, Performance** |
+| **App status and context** | Jeison logs an expense in a foreign currency while his phone’s GPS service tracks his location for a spending alert. |
+| **Changes in the context (includes what the persona is doing)** | Jeison enters a foreign expense while the system processes a location-based notification. |
+| **System reaction to the changes in the context** | The app must manage both processes without causing delays in currency conversion or location-based notifications by ensuring parallel execution. |
+
+| **Scenario #8: Custom Category Creation during Sync** | |
+| --- | --- |
+| **Quality attributes involved in the scenario** | **Usability, Scalability, Availability** |
+| **App status and context** | Jeison creates a new category while the app syncs recent transactions with the cloud. |
+| **Changes in the context (includes what the persona is doing)** | Jeison is reorganizing his budget and creates a new category mid-sync. |
+| **System reaction to the changes in the context** | The system must ensure that the new category is added locally without conflicting with the data being synced, using a temporary local cache to resolve conflicts. |
+
+| **Scenario #9: Currency Conversion Delay During Bill Reminder** | |
+| --- | --- |
+| **Quality attributes involved in the scenario** | **Performance, Availability, Scalability** |
+| **App status and context** | Sofía receives a bill reminder while converting a foreign expense to her home currency. |
+| **Changes in the context (includes what the persona is doing)** | The app attempts to convert the foreign currency while processing the bill reminder simultaneously. |
+| **System reaction to the changes in the context** | The app should handle the reminder notification asynchronously, ensuring the currency conversion process completes without delays. |
+
+| **Scenario #10: Background Data Sync and UI Responsiveness** | |
+| --- | --- |
+| **Quality attributes involved in the scenario** | **Responsiveness, Usability, Performance** |
+| **App status and context** | Tim is viewing his budget breakdown while background data sync is occurring. |
+| **Changes in the context (includes what the persona is doing)** | Tim navigates through the app's visual breakdown, causing high data load while sync is still in progress. |
+| **System reaction to the changes in the context** | The system must maintain UI responsiveness by prioritizing the user interaction while the background sync continues without causing lags. |
+
+| **Scenario #11: Language Switch During Active Task** | |
+| --- | --- |
+| **Quality attributes involved in the scenario** | **Internationalization, Accessibility, Usability** |
+| **App status and context** | Jeison switches the app’s language to Spanish while adjusting his budget categories. |
+| **Changes in the context (includes what the persona is doing)** | Jeison switches languages mid-task, potentially causing inconsistencies in the app’s UI. |
+| **System reaction to the changes in the context** | The system must ensure that all active processes are completed before the language switch occurs to prevent data loss or UI inconsistencies. |
+
+| **Scenario #12: App Crash During Heavy Analysis** | |
+| --- | --- |
+| **Quality attributes involved in the scenario** | **Resilience, Performance, Scalability** |
+| **App status and context** | Sofía is generating a spending trend analysis report, which involves heavy data processing. |
+| **Changes in the context (includes what the persona is doing)** | The analysis task takes longer than expected, causing potential app crashes. |
+| **System reaction to the changes in the context** | The app must handle the task asynchronously, providing user feedback on progress while ensuring resilience to prevent crashes during heavy processing. |
+
+These scenarios represent potential race conditions and cover key quality attributes of the app, ensuring that each aspect of the system's performance, usability, and resilience is accounted for.
