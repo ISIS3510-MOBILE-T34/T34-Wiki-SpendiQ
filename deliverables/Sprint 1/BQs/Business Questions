@@ -1,0 +1,34 @@
+Business Questions
+
+Type 1 (1 question)
+In which platform and OS version has the app experienced the most crashes in the last 30 days?
+Type 1 Justification: This question is critical for the development team as it provides actionable insights into the app's stability across different platforms and OS versions. By identifying the specific environments where the app is most prone to crashes, the development team can prioritize troubleshooting efforts, deploy targeted fixes, and optimize performance. This type of telemetry data is indispensable for maintaining the app's reliability and ensuring a seamless user experience, ultimately reducing user churn caused by technical issues.
+Type 2 (4 questions)
+At which time of the day do users most frequently log into their daily cash expenses?
+
+Type 2 Justification: Understanding the time of day when users are most active allows the development team to tailor the app's user experience to these peak usage periods. For instance, this data can inform decisions about when to push updates or engage users with notifications. By aligning app interactions with user behavior, the app can enhance user satisfaction and increase engagement, leading to higher retention rates.
+How many days has it been since the app gave the user any financial guidance?
+
+Type 2 Justification: This question focuses on the app’s ability to provide consistent, personalized financial advice, which is a key aspect of user experience. If users are not receiving timely guidance, it may signal a need for the development team to adjust the app's algorithms or notification system to ensure that users remain engaged and benefit from the app's features. Maintaining regular user engagement through personalized content is crucial for fostering long-term loyalty.
+Does the app report to the user about their specific limit every time they surpass it?
+
+Type 2 Justification: This question assesses the effectiveness of the app's notification system in aiding users' financial management. By ensuring that users are promptly informed when they exceed their set limits, the app can help them make better financial decisions. This feature directly impacts the user experience by providing real-time feedback and encouraging responsible spending, which can enhance the perceived value of the app.
+Does the app send a notification every time the user is located in an expensive location?
+
+Type 2 Justification: This question explores the app's context-aware functionality, which can significantly enhance user experience by providing timely and relevant notifications. By alerting users in real-time when they are in potentially costly areas, the app adds a layer of proactive financial management, which can be a unique selling point and a critical factor in user satisfaction and retention.
+Type 3 (3 questions)
+How does the frequency of manual expense entry versus automated transaction importing correlate with user retention and overall satisfaction with the app?
+
+Type 3 Justification: This question is designed to analyze the impact of different app features on user engagement and satisfaction. By examining how users interact with manual versus automated features, the development team can identify which methods are more effective in retaining users and ensuring they are satisfied with the app. These insights can guide future development efforts, such as enhancing the most popular features or simplifying less-used ones, to optimize the overall user experience.
+How many times a day, on average, do users go between checking their budget statistics in the app?
+
+Type 3 Justification: This question provides insights into user engagement with one of the app's core features—budget tracking. Understanding how frequently users interact with their budget statistics can help the development team assess the feature's value and identify opportunities for improvement. Frequent engagement might indicate that the feature is highly valued, whereas infrequent use could suggest that enhancements are needed to make the feature more user-friendly or informative
+Which features of our budgeting tools are used most frequently by users who have successfully reduced their monthly expenses by 10% or more?
+
+Type 3 Justification: By identifying which features are most effective in helping users achieve significant financial goals, this question informs the development team about which aspects of the app to promote or further develop. Understanding successful user behavior allows the team to prioritize features that have a proven impact on users' financial health, thereby enhancing the app's effectiveness and appeal
+Type 4 (1 question)
+What percentage of our app users show spending patterns indicative of being able to pay for premium features?
+Type 4 Justification: This question is crucial for identifying potential revenue opportunities. By analyzing user spending patterns, the app can segment its user base to target those most likely to convert to premium features. This data-driven approach enables the business to optimize its monetization strategy, ensuring that premium offerings are marketed to the users who are most likely to afford and benefit from them.
+Type 5 (1 question)
+How does the frequency of setting and achieving savings goals correlate with user retention rates and overall financial health indicators?
+Type 5 Justification: This question combines elements from multiple types, as it not only explores user behavior and engagement (Type 2/3) but also ties these factors to broader business metrics like retention and financial health (Type 4). By analyzing this correlation, the app can identify key drivers of user success and loyalty, which can inform both feature development and marketing strategies. The insights gained can help refine the app’s value proposition, making it more attractive to both existing and potential users
